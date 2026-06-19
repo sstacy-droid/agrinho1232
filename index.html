@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo ao Copo: A Jornada do Malte em Guarapuava</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo-link" aria-label="Voltar ao início">
+                <img src="./img/logo.png" alt="Logo Agrinho" class="logo">
+            </a>
+            <h1 class="site-title">Do Campo ao Copo: A Jornada do Malte em Guarapuava</h1>
+            <nav class="nav-desktop">
+                <button id="nav-more-btn" class="nav-more-btn" aria-label="Menu de navegação">Explorar ▾</button>
+                <div id="nav-menu" class="nav-menu hidden">
+                    <a href="#jornada">Jornada Produtiva</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#curiosidades">Curiosidades</a>
+                    <a href="#quiz">Quiz</a>
+                    <a href="#sustentabilidade">Sustentabilidade</a>
+                    <a href="#video">Vídeo</a>
+                    <a href="#hq">História em Quadrinhos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </nav>
+            <button id="accessibility-btn" class="accessibility-btn" aria-label="Menu de acessibilidade">A+</button>
+        </div>
+    </header>
+
+    <!-- Accessibility Menu -->
+    <div id="accessibility-menu" class="accessibility-menu hidden">
+        <div class="accessibility-content">
+            <h3>Acessibilidade</h3>
+            <div class="accessibility-controls">
+                <button id="font-increase" class="font-btn">🔠 Aumentar fonte</button>
+                <button id="font-decrease" class="font-btn">🔡 Diminuir fonte</button>
+                <button id="contrast-toggle" class="contrast-btn">🌓 Alto contraste</button>
+            </div>
+            <p class="close-hint">Pressione ESC para fechar</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-label">DO CAMPO AO COPO</span>
+                    <h2>Agro forte, futuro sustentável em cada etapa da jornada do malte</h2>
+                    <p>Da <strong>cevada cultivada no campo</strong> ao <strong>malte que movimenta a indústria e chega à cidade</strong>, esta cadeia produtiva mostra como produção, tecnologia e cuidado ambiental podem caminhar juntos.</p>
+                    <p>Em Guarapuava, essa conexão revela que o desenvolvimento sustentável nasce do equilíbrio entre trabalho rural, inovação, transformação industrial e uso responsável dos recursos naturais.</p>
+                    <div class="hero-buttons">
+                        <a href="#jornada" class="btn btn-primary">Conhecer a jornada</a>
+                        <a href="#sustentabilidade" class="btn btn-secondary">Ver ações sustentáveis</a>
+                    </div>
+                </div>
+                <div class="hero-cards">
+                    <div class="hero-card">
+                        <h3>Campo</h3>
+                        <p>Cultivo planejado e manejo responsável.</p>
+                    </div>
+                    <div class="hero-card">
+                        <h3>Tecnologia</h3>
+                        <p>Transformação do grão em valor e inovação.</p>
+                    </div>
+                    <div class="hero-card">
+                        <h3>Futuro</h3>
+                        <p>Produção com equilíbrio entre economia e meio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./img/Hero.png" alt="Campo de cevada em Guarapuava">
+                <div class="hero-overlay">
+                    <p><strong>UMA MESMA CADEIA, MUITOS IMPACTOS</strong></p>
+                    <p>O campo produz, a indústria transforma e a cidade reconhece o valor dessa conexão.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jornada Produtiva Section -->
+        <section id="jornada" class="jornada">
+            <div class="section-label">JORNADA PRODUTIVA</div>
+            <h2>Da lavoura à transformação</h2>
+            <p>A cadeia produtiva é apresentada em etapas visuais claras para mostrar como o campo, a indústria e a cidade se conectam ao longo do processo.</p>
+            
+            <div class="jornada-grid">
+                <div class="jornada-card">
+                    <div class="jornada-number">01</div>
+                    <h3>Cultivo no campo</h3>
+                    <p>A cevada começa sua jornada em lavouras planejadas, com atenção ao solo, ao clima e ao manejo responsável.</p>
+                </div>
+                <div class="jornada-card">
+                    <div class="jornada-number">02</div>
+                    <h3>Beneficiamento e malte</h3>
+                    <p>Após a colheita, o grão passa por processos técnicos que unem agro, indústria e tecnologia para gerar valor.</p>
+                </div>
+                <div class="jornada-card">
+                    <div class="jornada-number">03</div>
+                    <h3>Chegada à cidade</h3>
+                    <p>O malte conecta produção, economia e consumo, mostrando como o campo impacta diretamente a vida urbana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria Section -->
+        <section id="galeria" class="galeria">
+            <div class="section-label">GALERIA</div>
+            <h2>Do plantio ao produto final</h2>
+            <p>Uma visão visual da cadeia produtiva que liga o campo, a indústria e o cotidiano urbano.</p>
+            
+            <div class="carousel-container">
+                <button id="carousel-prev" class="carousel-btn prev" aria-label="Imagem anterior">❮</button>
+                <div class="carousel-main">
+                    <img id="carousel-image" src="./img/Campo.png" alt="Campo de cevada em Guarapuava" class="carousel-image">
+                </div>
+                <button id="carousel-next" class="carousel-btn next" aria-label="Próxima imagem">❯</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="indicator active" data-index="0" aria-label="Ir para imagem 1: Campo de cevada"></button>
+                <button class="indicator" data-index="1" aria-label="Ir para imagem 2: Transformação em malte"></button>
+                <button class="indicator" data-index="2" aria-label="Ir para imagem 3: Campo e cidade conectados"></button>
+            </div>
+
+            <div class="carousel-caption">
+                <h3 id="carousel-title">Campo de cevada</h3>
+                <p id="carousel-description">O início da jornada acontece no campo, onde o cultivo da cevada depende de planejamento, clima favorável e cuidado com os recursos naturais.</p>
+            </div>
+        </section>
+
+        <!-- Curiosidades Section -->
+        <section id="curiosidades" class="curiosidades">
+            <div class="section-label">CURIOSIDADES</div>
+            <h2>Você sabia?</h2>
+            <p>Pequenos fatos que ajudam a entender a relevância da cevada, do malte e do agro sustentável.</p>
+            
+            <div class="fact-box">
+                <p id="fact-text">A cevada é um dos grãos cultivados há mais tempo pela humanidade e segue tendo grande importância econômica e alimentar.</p>
+                <button id="fact-btn" class="btn btn-secondary">Mostrar outra curiosidade</button>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="quiz">
+            <div class="section-label">INTERATIVIDADE</div>
+            <h2>Quiz: teste seus conhecimentos</h2>
+            <p>Uma forma leve de revisar os principais conceitos apresentados no projeto.</p>
+            
+            <form id="quiz-form" class="quiz-form">
+                <div class="quiz-question">
+                    <p><strong>1.</strong> Qual grão é a base da cadeia produtiva apresentada no site?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="errado"> Milho</label>
+                        <label><input type="radio" name="q1" value="certo"> Cevada</label>
+                        <label><input type="radio" name="q1" value="errado"> Arroz</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>2.</strong> Depois da colheita, a cevada passa por processos que resultam em:</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="errado"> Algodão</label>
+                        <label><input type="radio" name="q2" value="certo"> Malte</label>
+                        <label><input type="radio" name="q2" value="errado"> Madeira</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>3.</strong> A expressão "do campo ao copo" representa principalmente:</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="errado"> Um passeio turístico pela cidade</label>
+                        <label><input type="radio" name="q3" value="certo"> A ligação entre produção agrícola, indústria e consumo</label>
+                        <label><input type="radio" name="q3" value="errado"> Apenas o transporte da colheita</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>4.</strong> Qual prática ajuda a tornar essa cadeia produtiva mais sustentável?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="certo"> Uso consciente da água e cuidado com o solo</label>
+                        <label><input type="radio" name="q4" value="errado"> Aumento do desperdício em todas as etapas</label>
+                        <label><input type="radio" name="q4" value="errado"> Eliminação total da tecnologia no campo</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>5.</strong> O projeto mostra que campo e cidade estão conectados porque:</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q5" value="errado"> São realidades sem relação entre si</label>
+                        <label><input type="radio" name="q5" value="certo"> O que é produzido no campo movimenta a indústria e chega ao cotidiano urbano</label>
+                        <label><input type="radio" name="q5" value="errado"> A cidade produz todo o malte sozinha</label>
+                    </div>
+                </div>
+
+                <button type="button" id="quiz-submit" class="btn btn-primary">Ver resultado</button>
+            </form>
+
+            <div id="quiz-result" class="quiz-result hidden">
+                <h3>Seu resultado</h3>
+                <p id="result-score"></p>
+                <p id="result-message"></p>
+                <button id="quiz-restart" class="btn btn-secondary">Refazer quiz</button>
+            </div>
+        </section>
+
+        <!-- Sustentabilidade Section -->
+        <section id="sustentabilidade" class="sustentabilidade">
+            <div class="section-label">SUSTENTABILIDADE</div>
+            <h2>Agro forte, futuro sustentável</h2>
+            <p>A produção da cevada e a transformação em malte mostram que desenvolvimento e responsabilidade ambiental precisam caminhar juntos.</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Produção responsável +</button>
+                    <div class="accordion-content hidden">
+                        <p>O manejo responsável do solo, o uso consciente da água e a seleção adequada de sementes garantem uma produção de qualidade sem comprometer os recursos naturais. A tecnologia agrícola moderna permite otimizar cada etapa do cultivo, reduzindo desperdícios e aumentando a eficiência.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Equilíbrio ambiental +</button>
+                    <div class="accordion-content hidden">
+                        <p>A preservação do solo, a conservação da biodiversidade e a redução do uso de agrotóxicos são práticas essenciais para manter o equilíbrio ambiental. A cadeia produtiva do malte demonstra como é possível produzir alimentos de qualidade respeitando o meio ambiente.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Futuro sustentável +</button>
+                    <div class="accordion-content hidden">
+                        <p>Investir em inovação, tecnologia limpa e práticas sustentáveis garante um futuro próspero para o agronegócio. A conexão entre campo, indústria e cidade cria oportunidades de desenvolvimento econômico que beneficiam toda a sociedade sem prejudicar as gerações futuras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vídeo Section -->
+        <section id="video" class="video">
+            <div class="section-label">AUDIOVISUAL</div>
+            <h2>Vídeo: a cadeia produtiva do malte</h2>
+            <p>Um complemento visual para aprofundar a compreensão do tema e enriquecer a apresentação do projeto.</p>
+            
+            <div class="video-container">
+                <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S_8qCqU0uR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- HQ Section -->
+        <section id="hq" class="hq">
+            <div class="section-label">NARRATIVA</div>
+            <h2>História em Quadrinhos</h2>
+            <p>Uma experiência complementar para apresentar o conteúdo de forma criativa e envolvente.</p>
+            
+            <div class="hq-container">
+                <iframe src="./HQ/hq.html" title="História em Quadrinhos" class="hq-iframe"></iframe>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="contato">
+            <div class="section-label">CONTATO</div>
+            <h2>Responsável pelo projeto</h2>
+            
+            <div class="contato-card">
+                <h3>Willian Schön Lopes</h3>
+                <p><strong>Função:</strong> Embaixador da Programação Paraná</p>
+                <p><strong>E-mail:</strong> <a href="mailto:s.stacy@escola.pr.gov.br">s.stacy@escola.pr.gov.br</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 - SEED | Programação Paraná</p>
+            <div class="footer-logos">
+                <img src="./img/SEED.png" alt="Logo SEED" class="footer-logo">
+                <img src="./img/ProgramacaoParana.png" alt="Logo Programação Paraná" class="footer-logo">
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/schonlopes" aria-label="GitHub">
+                    <img src="./img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/schonlopes" aria-label="Instagram">
+                    <img src="./img/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História em Quadrinhos - Do Campo ao Copo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f4f1de;
+            padding: 20px;
+            color: #3d405b;
+        }
+
+        .hq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hq-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #3d405b;
+        }
+
+        .hq-panel {
+            background: white;
+            border: 3px solid #3d405b;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .panel-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #81b29a 0%, #e07a5f 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .panel-text {
+            padding: 10px;
+        }
+
+        .panel-text h3 {
+            color: #e07a5f;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .panel-text p {
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #3d405b;
+        }
+
+        .speech-bubble {
+            background: #f2cc8f;
+            border: 2px solid #3d405b;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top-color: #f2cc8f;
+            border-right-color: #f2cc8f;
+        }
+
+        .character-name {
+            font-weight: 700;
+            color: #e07a5f;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .panel-content {
+                grid-template-columns: 1fr;
+            }
+
+            .panel-image {
+                height: 200px;
+            }
+
+            .hq-title {
+                font-size: 1.5rem;
+            }
+
+            .panel-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .panel-text p {
+                font-size: 0.9rem;
+            }
+        }
+
+        body.high-contrast {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        body.high-contrast .hq-panel {
+            background: #000000;
+            border-color: #ffffff;
+        }
+
+        body.high-contrast .panel-image {
+            background: #ffff00;
+            color: #000000;
+        }
+
+        body.high-contrast .panel-text h3 {
+            color: #00ffff;
+        }
+
+        body.high-contrast .speech-bubble {
+            background: #ffff00;
+            border-color: #ffffff;
+            color: #000000;
+        }
+
+        body.high-contrast .speech-bubble::after {
+            border-top-color: #ffff00;
+            border-right-color: #ffff00;
+        }
+
+        body.high-contrast .character-name {
+            color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="hq-container">
+        <h1 class="hq-title">🌾 A Jornada do Malte em Quadrinhos 🌾</h1>
+
+        <!-- Painel 1 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🌱</div>
+                <div class="panel-text">
+                    <h3>Cena 1: No Campo</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Agricultor João:</div>
+                        "Olá! Eu sou o João, agricultor aqui em Guarapuava. Este é meu campo de cevada. Vou mostrar como tudo começa!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 2 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🚜</div>
+                <div class="panel-text">
+                    <h3>Cena 2: Cultivo Responsável</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Agricultor João:</div>
+                        "Usamos técnicas sustentáveis: cuidado com o solo, uso consciente de água e rotação de culturas. Assim garantimos qualidade e preservamos o meio ambiente!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 3 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🌾</div>
+                <div class="panel-text">
+                    <h3>Cena 3: Colheita</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Agricultor João:</div>
+                        "Chegou a hora da colheita! A cevada está pronta. Agora ela segue para a indústria onde será transformada em malte."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 4 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🏭</div>
+                <div class="panel-text">
+                    <h3>Cena 4: Na Indústria</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Engenheira Maria:</div>
+                        "Olá! Sou a Maria, engenheira de processos. Aqui transformamos a cevada em malte usando tecnologia de ponta e sustentabilidade!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 5 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">⚙️</div>
+                <div class="panel-text">
+                    <h3>Cena 5: Processo de Malteação</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Engenheira Maria:</div>
+                        "O processo envolve embebição, germinação e secagem. Cada etapa é monitorada para garantir qualidade e eficiência energética!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 6 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🚚</div>
+                <div class="panel-text">
+                    <h3>Cena 6: Distribuição</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Motorista Carlos:</div>
+                        "Sou o Carlos! Levo o malte até a cidade. Essa conexão entre campo e cidade é fundamental para a economia!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 7 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🏙️</div>
+                <div class="panel-text">
+                    <h3>Cena 7: Na Cidade</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Consumidora Ana:</div>
+                        "Olá! Sou a Ana. Aqui na cidade, usamos o malte em várias bebidas e alimentos. Sem o trabalho de vocês, isso não seria possível!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel 8 -->
+        <div class="hq-panel">
+            <div class="panel-content">
+                <div class="panel-image">🌍</div>
+                <div class="panel-text">
+                    <h3>Cena 8: Conclusão</h3>
+                    <div class="speech-bubble">
+                        <div class="character-name">Todos juntos:</div>
+                        "Agro forte, futuro sustentável! Somos uma cadeia conectada: campo, indústria e cidade. Juntos, criamos desenvolvimento com responsabilidade ambiental!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sincronizar acessibilidade com a página principal
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'apply-accessibility') {
+                const fontSizeMultiplier = event.data.fontSizeMultiplier || 1;
+                const isHighContrast = event.data.isHighContrast || false;
+
+                document.body.style.fontSize = (16 * fontSizeMultiplier) + 'px';
+
+                if (isHighContrast) {
+                    document.body.classList.add('high-contrast');
+                } else {
+                    document.body.classList.remove('high-contrast');
+                }
+            }
+        });
+
+        // Notificar a página principal que a HQ está pronta
+        window.parent.postMessage({ type: 'accessibility-sync' }, '*');
+    </script>
+</body>
+</html>
