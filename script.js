@@ -328,3 +328,22 @@ window.addEventListener('message', (event) => {
         }
     }
 });
+
+const carouselData = [
+    {
+        image: './Campo.png',
+        title: 'Campo de cevada',
+        description: 'O início da jornada acontece no campo...'
+    },
+    {
+        image: './Malte.png',
+        title: 'Transformação em malte',
+        description: 'Após a colheita, o grão passa por processos...'
+    },
+    {
+        image: './Cidade.png',
+        title: 'Campo e cidade conectados',
+        description: 'O malte conecta produção, economia e consumo...'
+    }
+];
+
